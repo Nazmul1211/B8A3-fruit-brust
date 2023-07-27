@@ -12,6 +12,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <!-- font awesome  -->
+  <script src="https://kit.fontawesome.com/1fe4608528.js" crossorigin="anonymous"></script>
 
   <style>
     .font-lato {
@@ -34,7 +36,7 @@
 
 </head>
 
-<body class="font-lato">
+<body class="font-lato bg-white">
 
   <header class="mx-4 lg:mx-60">
     <nav class="my-12 border rounded-full bg-primary text-white">
@@ -48,20 +50,105 @@
         </div>
 
         <div class="flex gap-4 justify-center">
-            <div class="w-10 rounded-full">
-              <img src="/images/logo.png" />
-            </div>
-            <h1 class="text-4xl">Fruit Burst</h1>
+          <div class="w-10 rounded-full">
+            <img src="/images/logo.png" />
+          </div>
+          <h1 class="text-4xl">Fruit Burst</h1>
         </div>
 
-        <div class="form-control items-end">
-          <input type="text" placeholder="Search here" class="input rounded-full lg:w-[400px] md:w-auto bg-white" />
+        <div class="flex justify-between items-end rounded-full lg:w-[400px] md:w-auto bg-white">
+          <!-- <input type="text" placeholder="Search here" src="<i class="fa-solid fa-magnifying-glass"></i>" alt=""> -->
+          <p class="text-slate-800 text-xl p-2">Search here</p>
+          <i class="fa-solid fa-magnifying-glass items-center py-2 px-2 lg:px-4 text-slate-800 text-2xl"></i>
         </div>
       </div>
     </nav>
   </header>
+
   <main>
+
+            <!-- banner bottom section -->
+            <div class="mx-90 px-17 py-12 gap-24 items-center">
+              <div>
+                <img src="images/fruit1.png" alt="" class="mb-4">
+                <p class="text-white text-lr text-center">Strawberry</p>
+              </div>
+              <div>
+                <img src="images/fruit2.png" alt="" class="mb-4">
+                <p class="text-white text-lr text-center">Orange</p>
+              </div>
+              <div>
+                <img src="images/fruit3.png" alt="" class="mb-4">
+                <p class="text-white text-lr text-center">Mango</p>
+              </div>
+              <div>
+                <img src="images/fruit4.png" alt="" class="mb-4">
+                <p class="text-white text-lr text-center">Strawberry</p>
+              </div>
+              <div>
+                <img src="images/fruit5.png" alt="" class="mb-4">
+                <p class="text-white text-lr text-center">Mango</p>
+              </div>
+            </div>
+
+    <!-- slider or carousel -->
+    <div class="carousel mx-4 lg:mx-60">
+      <!-- slider 1 -->
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="/images/banner1.png" class="w-full" />
+        <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <div class="text-center space-y-4">
+            <h1 class="text-2xl lg:text-7xl text-white">Exotic tastes at your<br>doorstep</h1>
+            <p class="text-sm lg:text-xl text-white">We supply highly quality organic products</p>
+            <button class="bg-primary text-white text-lg lg:text-xl mt-8 px-7 py-5 rounded-lg">Shop Now</button>
+          </div>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slider 2 -->
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="/images/banner2.png" class="w-full" />
+        <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <div class="text-center space-y-4">
+            <h1 class="text-2xl lg:text-7xl text-white">Exotic tastes at your<br>doorstep</h1>
+            <p class="text-sm lg:text-xl text-white">We supply highly quality organic products</p>
+            <button class="bg-primary text-white text-lg lg:text-xl mt-8 px-7 py-5 rounded-lg">Shop Now</button>
+          </div>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slider 3 -->
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="/images/banner3.png" class="w-full" />
+        <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <div class="text-center space-y-4">
+            <h1 class="text-2xl lg:text-7xl text-white">Exotic tastes at your<br>doorstep</h1>
+            <p class="text-sm lg:text-xl text-white">We supply highly quality organic products</p>
+            <button class="bg-primary text-white text-lg lg:text-xl mt-8 px-7 py-5 rounded-lg">Shop Now</button>
+          </div>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slider 4 -->
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="/images/banner4.png" class="w-full" />
+        <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <div class="text-center space-y-0 lg:space-y-4">
+            <h1 class="text-2xl lg:text-7xl text-white">Exotic tastes at your<br>doorstep</h1>
+            <p class="text-sm lg:text-xl text-white">We supply highly quality organic products</p>
+            <button class="bg-primary text-white sm:text-lg lg:text-xl sm:mt-2 lg:mt-8 px-2 lg:px-7 py-1 lg:py-5 rounded-lg">Shop Now</button>
+          </div>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+    </div>
   </main>
+
   <footer>
 
   </footer>

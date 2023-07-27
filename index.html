@@ -2,47 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
-    <!-- tailwind and daisyui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- manrope google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B8A3 Fruit Brust</title>
+  <!-- tailwind and daisyui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- lato google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-    <style>
-        .font-manrope{
-            font-family: 'Manrope', sans-serif;
-        }
-    </style>
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
 
-    <!-- tailwind custom colors -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <!-- tailwind custom colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary': '#F85559',
           }
         }
-      </script>
+      }
+    }
+  </script>
+
 </head>
 
-<body class="font-manrope">
-    <header>
-        
-    </header>
-    <main>]
+<body class="font-lato">
 
-    </main>
-    <footer>
+  <header class="mx-4 lg:mx-60">
+    <nav class="my-12 border rounded-full bg-primary text-white">
+      <div class="navbar py-9 px-10 grid lg:grid-cols-3">
 
-    </footer>
+        <div class="flex-1 gap-10">
+          <a class="text-lg">Home</a>
+          <a class="text-lg">About Us</a>
+          <a class="text-lg">Shop</a>
+          <a class="text-lg">All Fruits</a>
+        </div>
+
+        <div class="flex gap-4 justify-center">
+            <div class="w-10 rounded-full">
+              <img src="/images/logo.png" />
+            </div>
+            <h1 class="text-4xl">Fruit Burst</h1>
+        </div>
+
+        <div class="form-control items-end">
+          <input type="text" placeholder="Search here" class="input rounded-full lg:w-[400px] md:w-auto bg-white" />
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+  </main>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
